@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS selector reference sheet</title>
+  </head>
+  <body>
+    <header>
+      <h1>CSS Selector reference sheet</h1>
+    </header>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Example</th>
+            <th>Meaning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" rowspan="2">UNIVERSAL</th>
+            <td class="example-symbols">* {}</td>
+            <td rowspan="2">Applies to all elements in the document</td>
+          </tr>
+          <tr>
+            <td class="example-text">Targets all elements on the page</td>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="2">TYPE</th>
+            <td class="example-symbols">h1, h2, h3 {}</td>
+            <td rowspan="2">Matches element names</td>
+          </tr>
+          <tr>
+            <td class="example-text">
+              Targets the <span class="code">&lt;h1&gt;</span>,
+              <span class="code">&lt;h2&gt;</span> and
+              <span class="code">&lt;h3&gt;</span> elements
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="4">CLASS</th>
+            <td class="example-symbols">.note {}</td>
+            <td rowspan="4">
+              Matches an element whose class attribute has a value that matches
+              the one specified after the period (or full stop) symbol
+            </td>
+          </tr>
+          <tr>
+            <td class="example-text">
+              Targets any element whose class attribute has a value of note
+            </td>
+          </tr>
+          <tr>
+            <td class="example-symbols">p.note {}</td>
+          </tr>
+          <tr>
+            <td class="example-text">
+              Targets only <span class="code">&lt;p&gt;</span> elements whose
+              class attribute has a value of note
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="2">ID</th>
+            <td class="example-symbols">#introduction {}</td>
+            <td rowspan="2">
+              Matches an element whose id attribute has a value that matches the
+              one specified after the pound or hash symbol
+            </td>
+          </tr>
+          <tr>
+            <td class="example-text">
+              Targets the element whose id attribute has a value of introduction
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="2">CHILD</th>
+            <td class="example-symbols">li>a {}</td>
+            <td rowspan="2">
+              Matches an element that is a direct child of another
+            </td>
+          </tr>
+          <tr>
+            <td class="example-text">
+              Targets any <span class="code">&lt;a&gt;</span> elements that are
+              children of an <span class="code">&lt;li&gt;</span> element (but
+              not other <span class="code">&lt;a&gt;</span> elements in the
+              page)
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="2">DESCENDANT</th>
+            <td class="example-symbols">p a {}</td>
+            <td rowspan="2">
+              Matches an element that is a descendent of another specified
+              element (not just a direct child of that element)
+            </td>
+          </tr>
+          <tr>
+            <td class="example-text">
+              Targets any <span class="code">&lt;a&gt;</span> elements that sit
+              inside a <span class="code">&lt;p&gt;</span>
+              element, even if there are other elements nested between them
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
